@@ -113,7 +113,7 @@ This example uses Cloud Shell environment for getting started with Cloud Shell E
 - Copy the auth token immediately to a secure location from where you can retrieve it later, because you won't see the auth token again in the Console.
 - Close the **Generate Token** dialog.
 
-**Login in to Registery:
+**Login in to Registery:**
 
 8.  Copy the following command:
 
