@@ -6,7 +6,7 @@ OCI Functions to Export OCI Cloud Guard Problems to Splunk via HEC
 ---
 The Goal of the function is to export the OCI Cloud Guard Problems to Splunk via HTTP Event Collector (HEC). 
 
-![alt text](Splunk_Arch.excalidraw.png "arch")
+![alt text](img/Splunk_Arch.excalidraw.png "arch")
 
 We will be using OCI Events to collect the problems from Cloud Guard and invoke it in the OCI functions to have it exported to the Splunk. 
 In the image above it is mentioned that the problems are been exported to Splunk Colud app however it can be sent to Splunk Enterprise as well as long as it supports HEC. 
