@@ -3,7 +3,7 @@ OCI Functions to Export OCI Cloud Guard Problems to Splunk via HEC
 
 
 ## Introduction
----
+
 The Goal of the function is to export the OCI Cloud Guard Problems to Splunk via HTTP Event Collector (HEC). 
 
 ![Architecture](./image/Splunk_Arch.excalidraw.png)
@@ -13,12 +13,12 @@ In the image above it is mentioned that the problems are been exported to Splunk
 
 
 ## Pre-requisites
----
+
 1. OCI Tenancy with administrator access. 
 2. Splunk hostname and HEC Token. 
 
 ## IAM Policies
----
+
 **IAM Policy for the user to create and manange OCI Functions**
 
 ```OCI-Policy
@@ -41,8 +41,15 @@ Allow dynamic-group <Dynamic Group Name> to manage all-resources in compartment 
 
 Reference : [Policies to Control Access to Network and Function](#https://docs.oracle.com/en-us/iaas/Content/Functions/Tasks/functionscreatingpolicies.htm)
 
+## Create OCI Events to invoke Cloud Guard Problems to OCI Functions 
+
+Create a new Event rule as below with the cloud guard and OCI Functions. 
+
+![Events](./image/events.png)
+
+
 ## Create and deploy the function
----
+
 This example uses Cloud Shell environment for getting started with Cloud Shell Environment. From your cloud shell, 
 
 1.  Find the name of the pre-created Fn Project context for the current region in which you created the application:
@@ -153,7 +160,7 @@ Application is successfully deployed.
 
 
 ## Test the Function 
----
+
 
 Once there is a problem in created in Coud Guard it can validated from Splunk end but just to test if data is getting Pushed to Splunk we can invoke the function through a json file manually like this, 
 
