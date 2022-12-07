@@ -45,7 +45,7 @@ Reference : [Policies to Control Access to Network and Function](#https://docs.o
 
 Create a new Event rule as below with the cloud guard and OCI Functions. 
 
-![Events](./image/events.png)
+![Events](./image/Events.png)
 
 
 ## Create and deploy the function
