@@ -1,0 +1,12 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+version: 1
+site:
+  title: "Cloud Guard Splunk Integration"
+  structure:
+    - type: space
+      key: space-cloud-guard-splunk
+      title: "Cloud Guard Splunk Integration"
+      path: cloud-guard-splunk
+      default: true
+      content:
+        directory: ./
